@@ -1,0 +1,18 @@
+{
+  "name": "CRex",
+  "description": "hax",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://metabase.commonroom.io/*"],
+      "js": ["./dist/out.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/comm.js"],
+      "matches": ["https://metabase.commonroom.io/*"]
+    }
+  ]
+}
